@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #ffbf00;
+    font-family: OCR A Std, monospace;
+}
+
+/* Layout of the Site Section */
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 99%;
+    background-color: black;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: center;
+    padding: 4em 2em;
+    padding-bottom: 1em;
+}
+
+header h1 {
+    font-size: 5.5em;
+}
+
+header h1 img {
+    vertical-align: middle;
+    height: 100px;
+    width: 100px;
+}
+
+/* Main part of body section */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em 2em;
+    height: 100%;
+}
+
+main h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.5;
+    padding: 0.5em 1em;
+    width: 100%;
+    font-size: 3em;
+}
+
+/* Main image buttons Section */
+.btns {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    gap: 7em;
+    padding: 2em 2em;
+    width: 100%;
+}
+
+.btns button {
+    background-color:black;
+    width: 20em;
+    height: 20em;
+    border: 5px solid #ffbf00;
+    transition: all 1.07s;
+}
+
+.btns img {
+    height: 250px;
+    width: 250px;
+}
+
+.btns button:hover {
+    transform:scale(1.1);
+    border: 5px solid #25007b;
+}
+
+/* Scoring section */
+.score {
+    display: flex;
+    justify-content: center;
+    flex: 0.5;
+    gap: 10em;
+    padding: 2em 2em;
+    width: 100%;
+}
+
+.player-score,
+.computer-score {
+    font-size: 3em;
+}
+
+/* Restart Section */
+.restart {
+    display: flex;
+    justify-content: center;
+    flex: 0.4;
+    gap: 10em;
+    padding: 2em 2em;
+    width: 100%;
+}
+
+.restart button {
+    border: 5px solid #ffbf00;
+    width: 5em;
+    height: 2em;
+    transition: all 1.07s;
+    background-color:black;
+    font-size: 5em;
+}
+
+.restart button:hover {
+    transform:scale(1.1);
+    border: 5px solid #25007b;
+}

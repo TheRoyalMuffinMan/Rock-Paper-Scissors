@@ -3,8 +3,30 @@
     <head>
         <meta charset="UTF-8">
         <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="style/index.css">
     </head>
     <body>
+        <header>
+            <h1>Rock <img src="icon/boxing-gloves.png"> Paper 
+                <img src="icon/boxing-gloves.png"> Scissors</h1>
+        </header>
+        
+        <main>
+            <h1 id="winner">First to get to 5, wins!</h1>   
+            <div class="btns">
+                <button value="rock"><img src="img/rock.png" alt="rock"></button>
+                <button value="paper"><img src="img/paper.png" alt="paper"></button>
+                <button value="scissors"><img src="img/scissors.png" alt="scissors"></button>
+            </div>
+            <div class="score">
+                <div class="player-score">Player: 0</div>
+                <div class="computer-score">Computer: 0</div>
+            </div>
+            <div class="restart">
+                <button id="reset">Reset</button>
+            </div>
+        </main>
+
         <script src="js/game.js"></script>
     </body>
 </html>
