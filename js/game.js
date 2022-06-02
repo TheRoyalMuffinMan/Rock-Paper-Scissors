@@ -1,5 +1,5 @@
-const ROUNDS = 5;
 const CHOICES = 3;
+const SCORE_TO_WIN = 5;
 const actions = [["rock", "scissors"], ["paper", "rock"], ["scissors", "paper"]];
 
 function computer() {
@@ -19,7 +19,7 @@ function round(playerSelection, computerSelection) {
 
 function game() {
     let playerScore = computerScore = 0;
-    for (let r = 0; r < ROUNDS; r++) {
+    while (playerScore < SCORE_TO_WIN && computerScore < SCORE_TO_WIN) {
         let playerSelection = prompt("Enter one from these three choices:\
                                       -Rock\n-Paper\n-Scissors\n");
         let computerSelection = computer();
@@ -27,13 +27,11 @@ function game() {
 
         if (playerSelection == computerSelection) {
             console.log(`You Tied! ${playerSelection} are the same ${computerSelection}`);
-            r--; continue;
         } else if (round(playerSelection, computerSelection)) {
             playerScore++;
         } else {
             computerScore++;
         }
-
     }
     console.log((playerScore > computerScore) ? "Player Won!" : "Computer Won!");
 }
