@@ -75,7 +75,7 @@ main h1 {
     width: 250px;
 }
 
-.btns button:hover {
+.btns button:hover:enabled {
     transform:scale(1.1);
     border: 5px solid #25007b;
 }
